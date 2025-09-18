@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function Programs() {
   return (
@@ -71,7 +72,6 @@ function ProgramRow({
   blurb: string;
   tags: Tag[];
 }) {
-  const tall = image.shape === "tall";
   return (
     <div className={`grid items-center gap-6 md:gap-10 lg:gap-16 lg:grid-cols-2`}>
       <div className={`${reverse ? "lg:order-2" : ""}`}>
@@ -100,15 +100,15 @@ function ProgramRow({
     </div>
   );
 }
-
 function Picture({ src, alt, shape }: { src: string; alt: string; shape: ImageShape }) {
   const height = shape === "tall" ? "h-[440px] sm:h-[520px] md:h-[560px]" : "h-[200px] sm:h-[240px] md:h-[260px]";
   return (
     <div className={`relative w-full ${height} overflow-hidden rounded-[var(--radius-xl)] ring-1 ring-black/5 shadow-[var(--shadow-soft)]`}>
-      <img src={src} alt={alt} className="absolute inset-0 h-full w-full object-cover" />
+      <Image src={src} alt={alt} fill className="object-cover" />
     </div>
   );
 }
+
 
 function Chip({ icon, label }: Tag) {
   return (

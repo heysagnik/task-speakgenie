@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 export default function Nav() {
@@ -18,12 +19,12 @@ export default function Nav() {
       <div className="mx-auto max-w-7xl px-6 md:px-10">
         <div className="flex h-16 items-center justify-between gap-4">
         
-          <a href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-fuchsia-400 via-violet-400 to-sky-400 ring-1 ring-black/5" />
             <span className="text-lg sm:text-xl font-semibold tracking-tight">
               Topmind Care
             </span>
-          </a>
+          </Link>
 
         
           <nav className="hidden md:flex items-center gap-8">

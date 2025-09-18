@@ -70,7 +70,7 @@ export default function Hero() {
 							
 							<div className="absolute left-6 sm:left-10 bottom-8 sm:bottom-10 rotate-2">
 								<div className="w-[300px] sm:w-[340px] rounded-[var(--radius-lg)] bg-card/95 backdrop-blur px-4 py-4 shadow-[var(--shadow-soft)] ring-1 ring-black/5">
-									<p className="font-semibold">Today's Journey</p>
+									<p className="font-semibold">Today&apos;s Journey</p>
 									<ul className="mt-2 space-y-2 text-muted-foreground">
 										<li className="flex gap-2 text-foreground">
 											<span className="shrink-0" aria-hidden>
